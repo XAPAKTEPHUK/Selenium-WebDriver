@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*Ivan Boychuk
+ * Week 6 Additional Tasks */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
