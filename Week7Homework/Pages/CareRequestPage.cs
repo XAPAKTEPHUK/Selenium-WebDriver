@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using PetCareTest.TestData;
+using PetCareTests.TestData;
 
 namespace PetCareTests.Pages
 {
@@ -52,16 +52,16 @@ namespace PetCareTests.Pages
             OtherQuantityDropdown.SelectByText(numberOfOthers);
         }
 
-        public void SetVisitsPerDay(string numberOfVisits)
+        public void SetVisitsPerDay(int numberOfVisits)
         {
-            if (numberOfVisits == "1")
+            if (numberOfVisits == 1)
             {
                 OneVisitPerDayRadio.Click();
             }
             else
             {
                 SeveralVisitsPerDayRadio.Click();
-                VisitsPerDayDropdown.SelectByText(numberOfVisits);
+                VisitsPerDayDropdown.SelectByText(numberOfVisits.ToString());
             }
         }
 
@@ -75,9 +75,5 @@ namespace PetCareTests.Pages
             SendRequestButton.Click();
         }
 
-        public string GetHeaderText()
-        {
-            return CareRequestPageHeader.Text;
-        }
     }
 }
