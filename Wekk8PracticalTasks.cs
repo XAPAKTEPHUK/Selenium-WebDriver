@@ -62,7 +62,7 @@ namespace Week8PracticalTasks
 
 
             /* 5. Find the number and sum of all integers between 1 and 50 which are divisible by 9.*/
-            int magicNumber=0, 
+            int magicNumber, 
                 ifNumber = 9, 
                 sumNumber=0, 
                 count=0;
